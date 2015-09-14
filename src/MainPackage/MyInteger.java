@@ -7,8 +7,8 @@ public class MyInteger {
 		this.value = intVal;
 	}
 	
-	public static int getInt(MyInteger intInstance) {
-		return intInstance.value;
+	public int getInt() {
+		return this.value;
 	}
 	
 	public boolean isEven() { 
