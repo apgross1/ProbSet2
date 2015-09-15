@@ -12,7 +12,7 @@ public class MyInteger {
 	}
 	
 	public boolean isEven() { 
-		if (this.value % 2 == 0) {
+		if (this.getInt() % 2 == 0) {
 			return true;
 		}
 		else
@@ -20,7 +20,7 @@ public class MyInteger {
 	}
 	
 	public boolean isOdd() { 
-		if (this.value % 2 == 0) {
+		if (this.getInt() % 2 == 0) {
 			return false;
 		}
 		else
@@ -28,8 +28,8 @@ public class MyInteger {
 	}
 	
 	public boolean isPrime() { 
-		for (int i = 2; i < this.value; i++) {
-			if (this.value % i == 0) {
+		for (int i = 2; i < this.getInt(); i++) {
+			if (this.getInt() % i == 0) {
 				return false;
 			}
 		}
@@ -62,7 +62,7 @@ public class MyInteger {
 	}
 	
 	public static boolean isEven(MyInteger classVal) {
-		if (classVal.value % 2 == 0) {
+		if (classVal.getInt() % 2 == 0) {
 			return true;
 		}
 		
@@ -71,7 +71,7 @@ public class MyInteger {
 	}
 	
 	public static boolean isOdd(MyInteger classVal) {
-		if (classVal.value % 2 == 0) {
+		if (classVal.getInt() % 2 == 0) {
 			return false;
 		}
 		
@@ -80,8 +80,8 @@ public class MyInteger {
 	}
 	
 	public static boolean isPrime(MyInteger classVal) {
-		for (int i = 2; i < classVal.value; i++) {
-			if (classVal.value % i == 0) {
+		for (int i = 2; i < classVal.getInt(); i++) {
+			if (classVal.getInt() % i == 0) {
 				return false;
 			}
 		}
@@ -89,7 +89,7 @@ public class MyInteger {
 	}
 	
 	public boolean equals(int intVal) {
-		if (intVal == this.value) {
+		if (intVal == this.getInt()) {
 			return true;
 		}
 		else
@@ -97,7 +97,7 @@ public class MyInteger {
 	}
 	
 	public boolean equals(MyInteger classVal) {
-		if (classVal.value == this.value) {
+		if (classVal.getInt() == this.getInt()) {
 			return true;
 		}
 		else
