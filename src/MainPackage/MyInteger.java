@@ -1,3 +1,7 @@
+//Andrew Gross
+//CISC181
+
+
 package MainPackage;
 
 public class MyInteger {
